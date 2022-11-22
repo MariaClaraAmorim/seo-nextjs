@@ -52,7 +52,7 @@ export default function Home(props: HeadProps) {
           description: "Open Graph Description",
           images: [
             {
-              url: "https://seo-final.vercel.app/logo.png",
+              url: "https://seo-nextjs-sage.vercel.app/logo.png",
               width: 800,
               height: 600,
               alt: "Og Image Alt",
