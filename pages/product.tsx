@@ -18,6 +18,8 @@ export default function Product() {
             />
           </div>
 
+          {/*  <Image src="https://d3ugyf2ht6aenh.cloudfront.net/stores/002/139/087/products/sem-nome-1580450px-10241024px-10241024px-11-88ce7f24ce013b280416639560914528-480-0.png" alt="Vercel Logo" width={72} height={16} /> */}
+
           <div>
             <h2>Descrição</h2>
 
@@ -38,7 +40,6 @@ export default function Product() {
 
           <div className={styles.row}>
             <h1 className={styles.title}>Bicicleta Caloi Velox 29 </h1>
-            {/* <HeartIcon /> */}
           </div>
 
           <div className={styles.dispatchTag}>Enviando normalmente</div>
