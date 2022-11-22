@@ -1,12 +1,14 @@
 import { NextSeo } from "next-seo";
+import { Seo } from "../components/seo";
 import styles from "../styles/Home.module.css";
 
 export default function Product() {
   return (
     <>
-      <NextSeo
+      <Seo
         title="Caloi Velox 29"
         description="A caloi velox é a sua porta de entrada para o mundo moutain bike. uma bike moderna com um visual arrojado para quem está em busca de aventuras sobre duas rodas"
+        canonical="www.dantasbikes.com.br/caloi-velox-29"
       />
 
       <div className={styles.panel}>
@@ -18,8 +20,12 @@ export default function Product() {
             />
           </div>
 
-          {/*  <Image src="https://d3ugyf2ht6aenh.cloudfront.net/stores/002/139/087/products/sem-nome-1580450px-10241024px-10241024px-11-88ce7f24ce013b280416639560914528-480-0.png" alt="Vercel Logo" width={72} height={16} /> */}
-
+          {/* <Image
+              src="https://d3ugyf2ht6aenh.cloudfront.net/stores/002/139/087/products/sem-nome-1580450px-10241024px-10241024px-11-88ce7f24ce013b280416639560914528-480-0.png"
+              alt="Imagem do produto"
+              width={100}
+              height={20}
+            /> */}
           <div>
             <h2>Descrição</h2>
 

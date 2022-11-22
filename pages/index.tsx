@@ -1,17 +1,13 @@
-import { NextSeo } from "next-seo";
-import Head from "next/head";
-import Image from "next/image";
-import { title } from "process";
+import { Seo } from "../components/seo";
 import styles from "../styles/Home.module.css";
 
 interface HeadProps {
   title: string;
   description: string;
-  urlPage: string;
 }
 
 export default function Home(props: HeadProps) {
-  const { title, description, urlPage } = props;
+  const { title, description } = props;
 
   return (
     <div className={styles.container}>
@@ -42,33 +38,9 @@ export default function Home(props: HeadProps) {
       />
        */}
 
-      <NextSeo
-        title={title}
-        description={description}
-        canonical="https://www.canonical.ie/"
-        openGraph={{
-          url: "https://seo-nextjs-sage.vercel.app/",
-          title: "Open Graph Title",
-          description: "Open Graph Description",
-          images: [
-            {
-              url: "https://seo-nextjs-sage.vercel.app/logo.png",
-              width: 800,
-              height: 600,
-              alt: "Og Image Alt",
-              type: "image/jpeg",
-            },
-          ],
-          site_name: "Teste SEO",
-        }}
-        twitter={{
-          handle: "@seo",
-          site: "@seo",
-          cardType: "summary_large_image",
-        }}
-      />
+      <Seo />
 
+      <h1>Dantas Bike</h1>
     </div>
   );
-
 }
